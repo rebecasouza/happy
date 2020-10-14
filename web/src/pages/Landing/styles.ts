@@ -102,7 +102,7 @@ export const Link = styled.a`
   align-items: center;
   justify-content: center;
 
-  transition: all 5s ease;
+  transition: all .2s ease;
   transition-property: color, background-color;
 
   &:hover {
