@@ -1,13 +1,14 @@
 import React from 'react';
 
-import GlobalStyles from './assets/styles/global';
+import GlobalStyles  from './assets/styles/global';
+import Routes from './routes';
 
 function App() {
   return (
-   <div className="App">
-     <GlobalStyles />
-       <h1>Hello World</h1>
-   </div>
+    <React.Fragment>
+      <GlobalStyles />
+      <Routes />
+    </React.Fragment>
   );
 }
 
