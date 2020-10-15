@@ -1,16 +1,13 @@
 import React from 'react';
-
 import { FiArrowRight } from 'react-icons/fi';
-
 import logoImg from '../../assets/images/logo.svg';
-
-
+import Button from '../components/Button';
+import colors from '../../assets/styles/colors';
 
 import {
   Container,
   Content,
   Main,
-  Link,
   Location
 } from './styles';
 
@@ -30,9 +27,20 @@ const Landing: React.FC = () => {
           <span>Rio Grande do Norte</span>
         </Location>  
         
-        <Link href="/">
+        <Button to="/map"
+          position="absolute"
+          height="80px"
+          width="80px"
+          right="0"
+          bottom="0"
+          borderRadius="30px"
+          backgroundColor={colors.yellow}
+          color={colors.buttonTextBrown}
+          hoverBackgroundColor={colors.lightBlue}
+          hoverColor={colors.blue}
+        >
           <FiArrowRight size={32} />
-        </Link>
+        </Button>
       </Content>
     </Container>
   );
