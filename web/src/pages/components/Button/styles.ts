@@ -26,7 +26,7 @@ export const CustomLink = styled(Link)<ButtonProps>`
 
   width: ${(props) => props.width};
   height: ${(props) => props.height};
-  background-color: ${(props) => props.backgroundColor};
+  background: ${(props) => props.backgroundColor};
   color: ${(props) => props.color};
   border-radius: ${(props) => props.borderRadius};
 

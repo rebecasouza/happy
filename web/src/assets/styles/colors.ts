@@ -17,6 +17,7 @@ const colors = {
     backLineGrey: '#D3E2E5',
     backBackgroundGrey: '#EBF2F5',
     hoverBlue: '#96FEFF',
+    hoverDarkerBlue: '#17D6EB',
     inputWhite: '#F5F8FA'
 };
 
