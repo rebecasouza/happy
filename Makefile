@@ -9,8 +9,11 @@ build:
 start:
 	@${DOCKER_COMPOSE} up -d
 # Stop
-stop:
+stopv:
 	@${DOCKER_COMPOSE} down --remove-orphans -v
+# Restart
+stop:
+	@${DOCKER_COMPOSE} down --remove-orphans
 # Restart
 restart:
 	@${DOCKER_COMPOSE} restart
