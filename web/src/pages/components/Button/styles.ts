@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import colors from '../../../assets/styles/colors';
 
 interface ButtonProps {
   position?: string;
@@ -18,11 +17,11 @@ interface ButtonProps {
 }
 
 export const CustomLink = styled(Link)<ButtonProps>`
-  position: ${(props) => props.position? props.position : 'inherit'};
-  top: ${(props) => props.top? props.top : 'inherit'};
-  right: ${(props) => props.right? props.right : 'inherit'};
-  bottom: ${(props) => props.bottom? props.bottom : 'inherit'};
-  left: ${(props) => props.left? props.left : 'inherit'};
+  position: ${(props) => (props.position ? props.position : 'inherit')};
+  top: ${(props) => (props.top ? props.top : 'inherit')};
+  right: ${(props) => (props.right ? props.right : 'inherit')};
+  bottom: ${(props) => (props.bottom ? props.bottom : 'inherit')};
+  left: ${(props) => (props.left ? props.left : 'inherit')};
 
   width: ${(props) => props.width};
   height: ${(props) => props.height};
@@ -34,7 +33,7 @@ export const CustomLink = styled(Link)<ButtonProps>`
   align-items: center;
   justify-content: center;
 
-  transition: all .2s ease;
+  transition: all 0.2s ease;
   transition-property: color, background-color;
 
   &:hover {
