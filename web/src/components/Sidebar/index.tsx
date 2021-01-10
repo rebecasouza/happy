@@ -3,7 +3,7 @@ import React from 'react';
 import { Aside, Footer } from './styles';
 
 import { FiArrowLeft } from 'react-icons/fi';
-import mapMarker from '../../../assets/images/map-marker.svg';
+import mapMarker from '../../assets/images/map-marker.svg';
 import { useHistory } from 'react-router-dom';
 
 const Sidebar: React.FC = () => {
