@@ -6,6 +6,8 @@ services:
     build: ./web
     volumes:
       - ./web:/usr/src/app
+    env_file:
+      - ./web/.env
     ports:
       - "3000:3000"
     stdin_open: true
@@ -23,7 +25,7 @@ services:
 
   db:
     container_name: pg
-    image: postgres:12-alpine
+    image: postgres:12.3-alpine
     volumes:
       - ./server/src/database/data/:/var/lib/postgresql/data
     ports:
